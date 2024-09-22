@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <title>Verificador de idades</title>
+</head>
+<body>
+
+    <header>
+        <h1>Verificador de Idadees</h1>
+    </header>
+
+    <section>
+        <div class="card">
+            <form action="verificador">
+                <div class="sexType">
+                    <button name="radsex" type="button" class="buttonSex" id="masc" onclick="selectSex('masc')" checked>Masculino</button>
+                    <button name="radsex" type="button" class="buttonSex" id="fem" onclick="selectSex('fem')">Feminino</button>
+                </div>
+                <label for="Ano de nascimento">Ano de nascimento:</label>
+                <input type="number" name="ano" id="ano" required placeholder="digite o ano do seu nascimento">
+                <button id="botao" type="button" class="checkButton" value="Verificar" onclick="verificar()">Verificar</button>
+                <div id="res" class="res">
+                    <p>preencha os dados acima para ver o resultado!</p>
+                </div>
+            </form>
+        </div>
+    </section>
+        <footer>
+            <p><em>&copy; Lucas Pires</em></p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

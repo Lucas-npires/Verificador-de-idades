@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #ECECEC; */
+    background-color: #EDEDED;
+    font-family: 'Roboto Serif', serif;
+    font: 15pt normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input {
+    margin-bottom: 2.5rem;
+    font-size: 18px;
+	padding: 5px 2px;
+	width: 100%;
+	padding-left: 15px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #C4D1EB;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+}
+
+input:focus {
+    background: #F2F2F2;
+	border: 1px solid #55D0DC;
+	border-radius: 10px;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+#foto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding-top: 15px;
+    transition: 0.4s;
+}
+
+#foto:hover{
+    filter: grayscale(50%);
+}
+
+.res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    padding: 35px;
+    margin-top: 20px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.sexType {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDEDED;
+    height: 2rem;
+    padding: 3px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+
+.buttonSex {
+    width: 50%;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    background-color: #EDEDED;
+}
+
+.buttonSex.selected {
+    background-color: #55D0DC;
+}
+
+.checkButton {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 0px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #333333;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    background-color: #55d0dc;
+}
+
+.checkButton:hover {
+    box-shadow: 0 0 #333;
+    color: #fff;
+    background-color: #333;
+}
+
+.res {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
